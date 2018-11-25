@@ -1,32 +1,67 @@
-# Prerequisites
-*.d
+#include <iostream>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+using namespace std;
 
-# Precompiled Headers
-*.gch
-*.pch
+int x=3;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+int k,i,lenght;
 
-# Fortran module files
-*.mod
-*.smod
+int main()
+{
+	cout<<"you can understud mean of evrything with the powerful father'sublime'of computer's."<<endl
+	<<"Also he gives you three life"<<endl<<"****************"<<endl;
+	while(x!=0){
+	
+	cout<<"what is the mean of...";
+	string girdi;
+	getline(cin,girdi);//stringin tümünü okuyan ve dizide tutan araç
+	int yaziboyut=girdi.length();
+	
+	string alfabe="abcdefghijklmnopqrstywxrz";
+	
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+	int toplamharf=0;
+	
+	for (int i=0;i<=yaziboyut;i++){
+		
+		for(int k=0;k<25;k++){
+			
+			if(girdi[i]==alfabe[k])
+			{
+				toplamharf=toplamharf+k+1;
+/*"engin"*/	
+				break;
+			}
+			
+		}
+				
+	}
 
-# Executables
-*.exe
-*.out
-*.app
+
+for(int j=0;j<=10;j+=2)
+	{
+
+	for(int i=0;i<=10-j;i+=2)
+		{
+		cout<<" ";
+		}				
+	for(int i=-1;i<j;i++)
+		{		
+		cout<<"*";
+		}
+		
+		cout<<endl;
+					
+	}
+
+
+
+cout<<"     "<<toplamharf<<endl;
+	
+//amacım burada alfabedeki karşılığı olan her harfin k değerini toplamak ve ekrana yazdırmak
+
+x--;	
+}
+	
+	
+	return 0;}
